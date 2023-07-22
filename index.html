@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tailwind 1st Project</title>
-<link rel="stylesheet" href="./dist/output.css">
-<link rel="stylesheet" href="img/Group 18final logo.png">
-<script src="https://cdn.tailwindcss.com"></script>
-<html class="scroll-smooth">
-  <!-- ... -->
-</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <html class="scroll-smooth"></html>
+
+  <!-- ~ Link Stuff -->
+
+</head>
 <body>
-<div id="home" class=" bg-black">
+  <div id="home" class=" bg-black">
     <header>
       <div class="relative z-20 bg-black">
           <div class="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-4">
@@ -32,28 +35,23 @@
                   <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
                     <ul class=" pt-32 text-white space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-4 lg:pt-0 text-left lg:text-lg  text-2xl mt-14 lg:mt-0 ">
                       <li>
-                        <a href="index.html" class="group px-4 py-2 rounded-full before:absolute before:inset-x-0 before:bottom-0 before:h-2">
+                        <a href="index.html" class="group px-4 py-2 rounded-full before:absolute before:inset-x-0 before:bottom-0 before:h-2 hover:text-sky-400">
                           <span class="relative">Home</span>
                         </a>
                       </li>
                       <li>
-                        <a href="#merch" class="group px-4 py-2 rounded-full relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 b before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                        <a href="merch.html" class="group px-4 py-2 rounded-full relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 b before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 hover:text-sky-400">
                           <span class="relative">Merch</span>
                         </a>
                       </li>
                       <li>
-                        <a href="app.html" class="group px-4 py-2 rounded-full relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0  before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                        <a href="app.html" class="group px-4 py-2 rounded-full relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0  before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 hover:text-sky-400">
                           <span class="relative">Application</span>
                         </a>
                       </li>
                       <li>
-                        <a href="portfolio.html" class="group px-4 py-2 rounded-full relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0  before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                        <a href="portfolio.html" class="group px-4 py-2 rounded-full relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0  before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100 hover:text-sky-400">
                           <span class="relative">Portfolio</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#aboutus" class="group px-4 py-2 rounded-full relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0  before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
-                          <span class="relative">About us</span>
                         </a>
                       </li>
                     </ul>
@@ -70,11 +68,17 @@
           </div>
       </div>
     </header>
+
+    <!-- ~ Nav Bar -->
+
     <div class="absolute mt-12 right-28 hidden lg:block">
       <video autoplay loop muted class="w-48 lg:w-96 cursor-pointer hover:duration-300 hover:scale-110 transition delay-150 duration-300 ease-in-out">
         <source src="img/Screen Recording 2023-07-13 at 9.56.38 PM.mov" type="video/mp4" />
       </video>
     </div>
+
+    <!-- ~ Video Input -->
+
     <div class=" max-w-xl text-white inline-block mt-10 ml-8 lg:ml-28">
         <h1 class="font-semibold text-5xl lg:text-7xl ">Welcome To <span class="text-sky-500">Ragnar</span> Store</h1>
         <p class=" mt-2 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">When it comes to modern fashion, <span class="text-sky-500">that's where we came in.</span></p>
@@ -83,6 +87,9 @@
             <a href="app.html" class=" inline-block rounded-3xl py-3 px-3 font-medium hover:duration-300 hover:transparent bg-white text-black hover:bg-black hover:text-white text-sm hover:scale-110 ml-2 transition delay-100 duration-300 ease-in-out">Download App</a>
         </div>
         </div>
+
+        <!-- ~ Introduction Section -->
+
         <div class="mt-10 ml-10 text-white lg:ml-28">
             <a href="#" class="text-2xl block">Introducing Our <span class="text-sky-500">Latest Merch</span></a>
         </div>
@@ -94,7 +101,7 @@
             <img class="ml-6" src="img/T-shirttwhite1.png">
             <img class="ml-4" src="img/T-shirttwhite2.png">
         </div>
-        <div class="mt-10 ml-11 text-white lg:ml-24">
+        <div class="mt-10 ml-10 text-white lg:ml-28">
             <a href="#" class="text-2xl block">Come with <span class="text-sky-500">Multiple Choices</span></a>
         </div>
         <div class="mt-4 text-white ml-4 lg:ml-24">
@@ -107,6 +114,9 @@
         </div>
         </div>
   </div>
+
+  <!-- ~ Merch Showcase -->
+
   <div id="merch"><h1 class="text-4xl lg:text-9xl flex justify-center mt-12 lg:mt-24 lg:mb-24">Quick Preview</h1></div>
   <div class="lg:flex lg:justify-center grid-cols-3 divide-x text-white text-center m-12">
     <div class="bg-black rounded-2xl px-12 py-12 my-8 lg:mx-8">
@@ -131,6 +141,8 @@
   </div>
   </div>
 
+  <!-- ~ Black Collection -->
+
   <div class="lg:flex lg:justify-center grid-cols-3 divide-x text-white text-center m-12">
     <div class="bg-black rounded-2xl px-12 py-12 my-8 lg:mx-8">
       <h1 class="text-4xl text-white">White Collections</h1>
@@ -154,6 +166,9 @@
   </div>
   </div>
   <div>
+
+  <!-- ~ White Collection -->
+
     <footer class="text-center mt-2 border-y-2 h-screen w-full">
       <div id="aboutus" class="flex justify-center mt-8 lg:mt-18">
         <a href="#"><img class="animate-bounce animate w-8" src="img/bjornlogoblack.png"></a>
@@ -180,6 +195,9 @@
             </li>
         </ul>
     </footer>
+
+    <!-- ~ About Us -->
+
   </div>
   <div>
         <ul class="text-right mb-0 bg-gray-200 p-4">
@@ -188,5 +206,8 @@
             </li>
         </ul>
   </div>
+
+  <!-- ~ Rights Resevered -->
+
 </body>
-  </html>
+</html>
