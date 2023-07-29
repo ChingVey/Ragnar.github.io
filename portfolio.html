@@ -140,6 +140,9 @@
             </div>
         </div>
 
+        <!-- img -->
+        <img id="image" src="">
+
         <!-- ~ Port Footer -->
 
    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -177,7 +180,25 @@
 
   </script>
 
-  <!-- ~ Js for auto text -->
+    <!-- ~ Js for auto text -->
+
+<script>
+  const endpoint = 'https://api.unsplash.com/photos/random?client_id=your_access_key';
+  const imageElement = document.getElementById('image');
+
+  // Make the HTTP request to the Unsplash API
+  fetch(endpoint)
+    .then(response => response.json())
+    .then(data => {
+      // Extract the URL of the image from the response data
+      const imageUrl = data.urls.regular;
+      // Update the src attribute of the <img> element with the image URL
+      imageElement.setAttribute('src', imageUrl);
+    })
+    .catch(error => console.error(error));
+</script>
+
+
     
 </body>
 </html>

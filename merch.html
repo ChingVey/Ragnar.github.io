@@ -11,14 +11,14 @@
   <!-- ~ Link Stuff -->
 
 <body>
-<div id="home" class=" bg-black">
+<div class=" bg-black">
     <header>
       <div class="relative z-20 bg-black">
           <div class="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-4">
             <div class="flex items-center justify-between">
-              <div class="relative z-20">
+              <div class="rela tive z-20">
                 <a href="#">
-                  <img src="img/bjornlogowhite.png" class="w-12 mt-6 hover:scale-110">
+                  <img src="img/bjornlogowhite.png" class="w-12 mt-6 mb-4">
                 </a>
               </div>
               <div class="flex items-center justify-end border-l lg:border-l-0">
@@ -31,7 +31,7 @@
   
                 <div class="peer-checked:translate-x-0 fixed inset-0 translate-x-[-100%] shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0 hover:bg-transparent backdrop-blur-md">
                   <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
-                    <ul class=" pt-32 text-white space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-4 lg:pt-0 text-center lg:text-lg  text-2xl mt-14 lg:mt-0 lg:text-white">
+                    <ul class=" pt-32 text-black space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-4 lg:pt-0 text-center lg:text-lg  text-2xl mt-14 lg:mt-0 lg:text-white">
                       <li>
                         <a href="index.html" class="group px-4 py-2 rounded-full before:absolute before:inset-x-0 before:bottom-0 before:h-2 hover:text-sky-400">
                           <span class="relative">Home</span>
@@ -49,7 +49,7 @@
                       </li>
                     </ul>
                     <div class=" py-8 px-6 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0 lg:pr-0 lg:pl-6">
-                        <a href="#home" class="flex justify-center text-xl px-5 p-3 rounded-full bg-violet-500  text-center text-white font-semibold">
+                        <a href="#" class="flex justify-center text-xl px-5 p-3 rounded-full bg-violet-500  text-center text-white font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="pr-2 w-7 h-7">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                             </svg>                              
@@ -66,11 +66,88 @@
 
     <!-- ~ Nav Bar -->
 
-    <div class="text-white text-4xl lg:text-7xl text-left lg:ml-28 ml-8 mt-10"><h1 class="font-semibold"><span class="text-sky-500">Ragnar</span> Merch</h1>
+    <div class="text-black bg-white max-w-full h-full text-4xl lg:text-7xl text-center pt-12">
+      <h1 class="font-semibold"><span class="text-sky-500">Ragnar</span> Merch</h1>
       <p class="text-sm lg:text-xl pt-2">Explore Collection</p>
+<form>
+  <div class="flex mt-12 m-8">
+      <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+      <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">All categories <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+</svg></button>
+      <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+          <li>
+              <button type="button" class="inline-flex w-full px-5 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">T-Shirts</button>
+          </li>
+          <li>
+              <button type="button" class="inline-flex w-full px-5 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Shoes</button>
+          </li>
+          <li>
+              <button type="button" class="inline-flex w-full px-5 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hoodies</button>
+          </li>
+          <li>
+              <button type="button" class="inline-flex w-full px-5 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pants</button>
+          </li>
+          </ul>
+      </div>
+      <div class="relative w-full">
+          <input type="search" id="search-dropdown" class="block p-5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search T-Shirts, Shoes, Hoodies, Pants..." required>
+          <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-sky-500 rounded-r-lg border border-sky-500 hover:bg-sky-300 focus:ring-4 focus:outline-none focus:ring-sky-300 dark:bg-sky-500 dark:hover:bg-sky-400 dark:focus:ring-sky-300">
+              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+              </svg>
+              <span class="sr-only">Search</span>
+          </button>
+      </div>
+  </div>
+</form>
+  <button class="text-lg bg-sky-400 py-3 px-10 mb-4 rounded-full text-white hover:bg-sky-500">Get Start</button>
 
+
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/anton-poznyak-in3-CLQb48A-unsplash.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/oliver-sjoberg-v4SZvUgqh80-unsplash.jpg" alt="">
+        </div>
     </div>
-    <div class="my-20 lg:ml-20 lg:mr-20">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/a8cef085cff5d5a25524c69722f578bf.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/the-ian-GJB7YePQFmQ-unsplash.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/filip-mroz-HkIPSDEX4qA-unsplash.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/carla-santiago-7MoQzYXa-O0-unsplash.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/bobby-allen-H3bMeGdBsL4-unsplash.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="img/rod-long-h14qZmHumqM-unsplash.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+      <!-- ~ Text Header -->
+
       <div class="flex flex-row justify-between m-8 text-white ml-8">
         <h2 class="text-xl lg:text-4xl">Ragnar Black Collection</h2>
         <a href="#" class="flex flex-row text-lg hover:text-sky-400 mr-8">
@@ -80,9 +157,6 @@
           </svg>
         </a>
       </div>
-
-      <!-- ~ Text Header -->
-
     <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-white m-8 ml-8">
       <div class="shadow-lg rounded-lg">
         <a href="#">
@@ -225,7 +299,6 @@
 
     <!-- ~ Ragnar Black Section -->
 
-    <div class="my-20">
       <div class="flex flex-row justify-between m-8 text-white ml-8">
         <h2 class="text-xl lg:text-4xl">Ragnar White Collection</h2>
         <a href="#" class="flex flex-row text-lg hover:text-sky-400 mr-8">
@@ -375,17 +448,46 @@
       </div>
     </div>
 
-    <!-- ~ Ragnar White Section -->
-      
-    <footer>
-      <div class="bg-gray-200">
-        <ul class="text-right mb-0 lg:mr-8 mt-10 py-4">
-            <li>
-                <a href="#" class="text-xs lg:text-sm">@2023-2030 Ragnar.All rights resevered.</a>
-            </li>
+      <!-- ~ Ragnar White Section -->
+
+      <footer class="text-center mt-2 h-screen w-full bg-white">
+        <div id="aboutus" class="flex justify-center pt-8 lg:pt-18">
+          <a href="#"><img class="animate-bounce animate w-8" src="img/bjornlogoblack.png"></a>
+        </div>
+        <ul>
+          <li class="list-none font-semibold">
+            <a href="#" class="text-sm block pb-8">Ragnar</a>
+            <p class="mb-6 text-xs font-medium pt-12">Ragnar is a warrior of the north also known as "Viking".</p>
+            <a href="#" class="text-sm block pb-6 pt-16">Follow Us</a>
+            <div class="flex justify-center pb-10">
+              <a href="#"><img class="w-8 pt-8" src="img/Facebook-logo-blue-circle-large-transparent-png.png"></a>
+              <a href="https://instagram.com/7jing_vey7?igshid=NTc4MTIwNjQ2YQ=="><img class="w-8 ml-4 pt-8"
+                  src="img/pngtree-instagram-icon-png-image_6315974.png"></a>
+              <a class="mt-8" href="https://www.threads.net/@7jing_vey7"><img class="w-7 ml-4"
+                  src="img/threads-logo-E9BA734BF6-seeklogo.com.png"></a>
+              <a href=" https://t.me/Lor_JingVey"><img class="w-8 ml-4 pt-8" src="img/Telegram_2019_Logo.svg.png"></a>
+            </div>
+            <a href="#" class="text-sm block pb-2 pt-16">Customer Services</a>
+            <div class="flex justify-center pb-10">
+              <a href="#" class="mx-0 pt-6"><img class="w-8" src="img/3593366.png"></a>
+              <a href="#" class="mt-8 text-xs">Privacy Policy</a>
+            </div>
+            <a href="#" class="text-sm block pb-8 pt-16">We Accept</a>
+            <div class="flex justify-center">
+              <a href="#"><img class="w-72 pt-8" src="img/Screenshot 2023-07-09 at 1.31.21 PM.png"></a>
+            </div>
+          </li>
         </ul>
-      </div>
-    </footer>
+        <div>
+          <ul class="text-right mb-0 bg-gray-200 p-4 mt-14">
+            <li>
+              <a href="#" class="text-xs lg:mr-8">@2023-2030 Ragnar.All rights resevered.</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+    <!-- ~ About Us -->
         
-</body>
+  </body>
 </html>
