@@ -69,39 +69,20 @@
     <div class="text-black bg-white max-w-full h-full text-4xl lg:text-7xl text-center pt-12">
       <h1 class="font-semibold"><span class="text-sky-500">Ragnar</span> Merch</h1>
       <p class="text-sm lg:text-xl pt-2">Explore Collection</p>
-<form>
-  <div class="flex mt-12 m-8">
-      <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
-      <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">All categories <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg></button>
-      <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
-          <li>
-              <button type="button" class="inline-flex w-full px-5 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">T-Shirts</button>
-          </li>
-          <li>
-              <button type="button" class="inline-flex w-full px-5 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Shoes</button>
-          </li>
-          <li>
-              <button type="button" class="inline-flex w-full px-5 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Hoodies</button>
-          </li>
-          <li>
-              <button type="button" class="inline-flex w-full px-5 py-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Pants</button>
-          </li>
-          </ul>
-      </div>
-      <div class="relative w-full">
-          <input type="search" id="search-dropdown" class="block p-5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search T-Shirts, Shoes, Hoodies, Pants..." required>
-          <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-sky-500 rounded-r-lg border border-sky-500 hover:bg-sky-300 focus:ring-4 focus:outline-none focus:ring-sky-300 dark:bg-sky-500 dark:hover:bg-sky-400 dark:focus:ring-sky-300">
-              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-              </svg>
-              <span class="sr-only">Search</span>
-          </button>
-      </div>
-  </div>
-</form>
+
+      <form class="p-8">   
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+            </div>
+            <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Search Collections, Merch..." required>
+            <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-sky-500 dark:hover:bg-sky-600 dark:focus:ring-black">Search</button>
+        </div>
+    </form>
+    
   <button class="text-lg bg-sky-400 py-3 px-10 mb-4 rounded-full text-white hover:bg-sky-500">Get Start</button>
 
 
@@ -125,18 +106,18 @@
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/filip-mroz-HkIPSDEX4qA-unsplash.jpg" alt="">
+            <img class="h-auto max-w-full rounded-lg  hidden md:block" src="img/filip-mroz-HkIPSDEX4qA-unsplash.jpg" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/carla-santiago-7MoQzYXa-O0-unsplash.jpg" alt="">
+            <img class="h-auto max-w-full rounded-lg hidden md:block" src="img/carla-santiago-7MoQzYXa-O0-unsplash.jpg" alt="">
         </div>
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/bobby-allen-H3bMeGdBsL4-unsplash.jpg" alt="">
+            <img class="h-auto max-w-full rounded-lg  hidden md:block" src="img/bobby-allen-H3bMeGdBsL4-unsplash.jpg" alt="">
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="img/rod-long-h14qZmHumqM-unsplash.jpg" alt="">
+            <img class="h-auto max-w-full rounded-lg hidden md:block" src="img/rod-long-h14qZmHumqM-unsplash.jpg" alt="">
         </div>
     </div>
 </div>
