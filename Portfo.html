@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio2.0</title>
+    <link rel="stylesheet" href="./dist/output.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<html class="scroll-smooth"></html>
+</head>
+<body class="bg-black">
+    
+</body>
+</html>
+<div class="md:h-screen md:w-full flex text-white px-6  sm:pl-12 md:pl-16 lg:pl-24 mt-12">
+  <div>
+    <h1 class="font-semibold text-5xl lg:text-4xl xl:text-5xl 2xl:text-7xl ">Welcome To <span
+        class="text-sky-500">Ragnar</span> Store</h1>
+    <p class=" mt-2 text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl">When it comes to modern fashion, <span
+        class="text-sky-500">that's where we came in.</span></p>
+    <div class="mt-10">
+      <a href="merch.html"
+        class=" inline-block font-medium py-3 px-3 bg-sky-500 rounded-3xl hover:bg-transparent hover:duration-300 text-sm hover:scale-11 hover:bg-white hover:text-black transition delay-100 duration-300 ease-in-out">Check
+        Out Our Product</a>
+      <a href="app.html"
+        class=" inline-block rounded-3xl py-3 px-3 font-medium hover:duration-300 hover:transparent bg-white text-black hover:bg-black hover:text-white text-sm hover:scale-110 ml-2 transition delay-100 duration-300 ease-in-out">Download
+        App</a>
+    </div>
+
+
+
+
+    All function :
+
+    Auto Text:
+
+    <div class="hidden"><h1 class="text-center mt-10 text-2xl text-white font-bold font-mono">I <span class="auto-type text-sky-500"></span></h1></div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+     var typed = new Typed('.auto-type', {
+       strings: ["Code", "Eat", "Sleep"],
+       typeSpeed: 150,
+       backspeed: 150,
+       loop: true
+     })
+   </script>
+ 
+     <!-- ~ Js for auto text -->
+
+     hide Show :
+
+     <div class="flex justify-center py-8 lg:hidden"><button type="button" id="btn" onclick="hide_show()" class=" text-white rounded-full text-center hover:underline decoration-sky-500  px-16 text-2xl font-semibold  hidden">Let's Talk</button></div>
+
+     <script>
+
+      var a = 1;
+      function hide_show()
+      {
+        if(a==1)
+          {
+            document.getElementById("Contact").style.display="flex";
+            return a=0;
+  
+          }
+        else
+          {
+            document.getElementById("Contact").style.display="none";
+            return a=1;
+          }
+      }
+  
+    </script>
+
+    <!-- ~ hide and show -->
+
